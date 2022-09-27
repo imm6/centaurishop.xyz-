@@ -1,0 +1,225 @@
+/* [[ ===== Google Fonts=====]] */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+/* [[ ===== Universal Configurations=====]] */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --SecondDark: #121214;
+   --MainColor: #00c2de;
+   --White: #eee;
+}
+
+#bg {
+   height: 100vh;
+}
+
+body {
+   background-image: url('background.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+  background-color: #111113;
+   height: 100vh;
+
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.Container {
+   display: flex;
+   align-items: center;
+   height: 100%;
+   width: 100%;
+   justify-content: center;
+}
+
+
+.Main {
+   width: 350px;
+   display: flex;
+   border: 1px solid #303030;
+   justify-content: center;
+   border-radius: 8px;
+   flex-direction: column;
+   gap: 8px;
+   background-color: #121214;
+   padding: 15px;
+}
+
+.Main h1 {
+   color: var(--MainColor);
+   font-family: 'Nunito';
+   font-size: 25px;
+   text-align: center;
+}
+
+.Main h4 {
+   color: #eee;
+   font-family: 'Nunito';
+   font-weight: 450;
+   display: inline-block;
+   padding-left: 8px;
+   text-align: left;
+   font-size: 15px;
+
+}
+
+.Main b {
+   color: #00c2de;
+}
+.Main input {
+   background-color: #19191d;
+   border: none;
+   border: 1px solid #292929;
+
+   border-radius: 5px;
+  margin-left: 5px;
+   padding: 10px;
+
+   font-family: 'Nunito';
+   font-weight: 450;
+   height: 30px;
+   color: rgb(187, 187, 187);
+}
+
+.Main img {
+   display: flex;
+   align-self: center;
+   max-width: 250px;
+}
+
+
+.Main .btn {
+ 
+   margin-top: 15px;
+   margin-left: 5px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   height: 30px;
+   justify-content: center;
+   border-radius: 8px;
+  
+   background-color: #00a6c0;
+}
+
+.Reg {
+  color: #c5c5c5;
+  fontfamily: 'Nunito';
+}
+
+.Main a > button {
+   color: #eee;
+   width: 100%;
+   font-family: 'Nunito';
+   font-weight: 500;
+   font-size: 15px;
+   cursor: pointer;
+}
+
+.Main a:hover {
+   opacity: 0.7;
+}
+
+
+input:focus {
+   outline: none;
+}
+
+#olduser {
+   display: flex;
+   aling-items: center;
+   color: #707070;
+   justify-content: center;
+}
+
+
+/* [[ ===== Notification - Terms and Conditions =====]] */
+
+
+.NotificationContainer {
+   display: none;
+   background-color: rgba(0, 0, 0, 0.2);
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   pointer-events: none;
+   left: 0;
+   height: 100vh;
+   width: 100vw;
+
+}
+
+.visible {
+   pointer-events: auto;
+   display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+button {
+   background-color: transparent;
+   border: none;
+}
+
+.Notification {
+   background-color: #121214;
+   width: 550px;
+   max-width: 100%;
+   height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #303030;
+   flex-direction: column;
+   padding: 30px 50px;
+   text-align: center;
+   border-radius: 10px;
+   box-sizing: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Notification h2 {
+   font-family: 'Nunito';
+   font-weight: 700;
+   color: #009fb8;
+}
+
+.Notification p {
+   font-family: 'Nunito';
+   font-weight: 500;
+   padding-bottom: 10px;
+   color: #c5c5c5;
+}
+
+.Notification #TAC-Button {
+   background-color: #00a6c0;
+   border-radius: 8px;
+   font-family: 'Nunito';
+   width: 130px;
+   cursor: pointer;
+   display: inline-block;
+   font-weight: 500;
+   padding: 5px 30px;
+   color: #ffffff;
+   text-decoration: none;
+   
+}
+
+#TAC {
+   text-decoration: none;
+   color: #00a6c0;
+}
+
+#TAC:hover {
+   text-decoration: underline;
+}

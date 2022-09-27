@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap");
+
+/* [[ ===== Universal Configurations=====]] */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+:root {
+   --White: #eee;
+   --MainDark: #111113;
+   --SecondsDark: #121214;
+   --MainColor: #00c2de;
+}
+
+body {
+   background-color: #111113;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #01889c; 
+  border-radius: 6px;
+}
+
+
+
+/* [[ ===== Header =====]] */
+
+header {
+   z-index: 10;
+   border-bottom: 1px solid #282828;
+   position: sticky;
+   top: 0;
+   backdrop-filter: blur(16px);
+   font-family: "Nunito", sans-serif;
+   font-weight: 500;
+   display: flex;
+   justify-content: space-between;
+   background-color: transparent;
+   backdrop-filter: blur(5px);
+   align-items: center;
+   padding: 21px 10%;
+}
+
+header a {
+   color: #c6cdce !important;
+   font-size: 17px;
+}
+
+.Navbar-li {
+   display: inline-block;
+   padding: 0 15px;
+}
+
+.Navbar-ul {
+   text-align: center;
+   display: inline-block;
+   margin-block: 2px;
+   position: relative;
+}
+
+header img {
+   margin-right: 5%;
+   max-width: 50px;
+}
+
+#Actual::after {
+   content: "";
+   background-color: #00c2de;
+   width: 55px;
+   height: 3px;
+   position: absolute;
+   bottom: -5px;
+   left: 47%;
+   border-radius: 8px;
+   transform: translateX(-48%);
+}
+
+#Loginbtn {
+   background-color: #00c2de;
+   display: inline-block;
+   padding: 3px 10px;
+   border-radius: 6px;
+}
+
+.submenu {
+   display: block;
+   transition: 1s;
+}
+
+.Flex {
+   transition: 0.3s;
+   height: 50%;
+   padding: 5px 5px 5px 10px;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+}
+
+.Flex img {
+   max-height: 20px;
+   max-width: 25px;
+   border-radius: 2px;
+}
+
+#Lenguage:hover .submenu, #Lenguage:active .submenu {
+   width: 150px;
+   border: 1px solid #282828;
+   border-radius: 5px;
+   background-color: #121214;
+   display: block;
+   position: absolute;
+   color: #6d6d6d;
+   margin-top: 35px;
+   margin-left: -15px;
+}
+
+.submenu > ul > li > a > img {
+   max-width: 25px;
+}
+
+
+
+.Flex:hover {
+   cursor: pointer;
+   background-color: #1d1d1d;
+}
+
+#Lenguage a {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   color: #eee;
+   gap: 5px;
+}
+
+#Lenguage img {
+   border-radius: 3px;
+   max-width: 25px;
+}
+
+.Options {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+
+.Options {
+   display: none;
+}
+
+.Loged img {
+   max-width: 40px;
+   border: 2px solid #01889c;
+   border-radius: 50%;
+}
+
+/* [[ ===== Main =====]] */
+
+.Introduction {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 92vh;
+   width: 100%;
+   flex-direction: column;
+}
+
+h1 {
+   color: var(--MainColor);
+   text-align: center;
+   font-family: "Poppins", sans-serif;
+}
+
+.MainTitle {
+   margin-top: 0;
+   padding-top: 0;
+}
+
+.Introduction h4 {
+   margin-left: 15px;
+   margin-right: 15px;
+   text-align: center;
+}
+
+h4 {
+   color: rgb(184, 184, 184);
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+}
+
+b {
+   color: var(--MainColor);
+   text-decoration: underline;
+}
+
+/* [[ ===== Main - Services - Title =====]] */
+
+.Services {
+   margin-left: 5rem;
+   margin-right: 5rem;
+   margin-bottom: 5rem;
+   margin-top: 1rem;
+}
+.Title {
+   margin-bottom: 0;
+   color: var(--MainColor);
+   font-size: 25px;
+   font-family: "Rubik";
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+}
+
+.Title i {
+   color: var(--MainColor);
+   background-color: rgb(0, 194, 222, 0.1);
+   padding: 7px;
+   border-radius: 8px;
+}
+
+
+.Services {
+   padding: 0 9rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   justify-content: center;
+   grid-row-end: 5;
+   grid-gap: 30px;
+}
+
+.Card {
+   box-shadow: -2px 4.5px 17.5px 7.5px #111111;
+   padding: 20px;
+   background-color: var(--SecondsDark);
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+   flex-direction: column;
+   font-family: "Poppins", sans-serif;
+   color: var(--White);
+}
+
+.Card h2 {
+   color: #00c2de;
+   font-family: "Rubik";
+   font-weight: 500;
+}
+
+.Card .Price {
+   color: var(--MainColor);
+   background-color: rgb(0, 194, 222, 0.1);
+   padding: 7px;
+   border-radius: 8px;
+}
+
+.Card p {
+   font-weight: 300;
+   color: rgb(184, 184, 184);
+   font-size: 14px;
+   padding-bottom: 3px;
+}
+
+.button {
+   background-color: #03bcd8ad;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #eee;
+   width: 30%;
+
+   text-align: center;
+   height: 23px;
+   font-family: "Rubik";
+   font-size: 15px;
+
+   border-radius: 8px;
+   transition: 0.3s;
+}
+
+.button:hover {
+   background-color: transparent;
+   border: 1px solid #00c2de;
+}
+
+#MostSell {
+   animation: zoom-in-zoom-out 2s ease infinite;
+   transform: translateZ(0);
+}
+
+/* [[ ===== Stock=====]] */
+.StockContainer {
+   position: relative;
+   height: 40vh;
+   margin-top: 15px;
+}
+.Stock {
+  
+   height: 85%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.Stock h3 {
+   font-family: "Rubik";
+   line-height: 50px;
+   font-size: 45px;
+   color: #01889c;
+}
+
+#Live {
+   background-color: #776795;
+   padding: 5px 15px;
+   color: #eee;
+   font-family: 'Rubik';
+   border: none;
+   position: absolute;
+   bottom: 15px;
+   right: 15px;
+   border-radius: 7px;
+   animation: liveAnimation 2s infinite;
+}
+
+
+/* [[ ===== Footer =====]] */
+
+footer {
+   font-family: "Rubik";
+   font-weight: 500;
+   color: #6d6d6d;
+}
+
+.Content {
+   display: flex;
+   align-items: center;
+   height: 50px;
+   justify-content: center;
+}
+
+/* [[ ===== RESPOSIVE DESING AND ANIMATIONS  =====]] */
+
+@media screen and (max-width: 600px) {
+   .Services {
+      padding: 0 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   }
+
+   header {
+      padding: 21px 10%;
+   }
+
+   nav {
+      display: none;
+   }
+}
+
+/* [[ ===== Animation made by: 30secondsofcode.org ===== ]]*/
+
+@keyframes zoom-in-zoom-out {
+   0% {
+      transform: scale(1, 1);
+   }
+   50% {
+      transform: scale(1.1, 1.1);
+   }
+   100% {
+      transform: scale(1, 1);
+   }
+}
+
+/* [[ ===== DESING END - MADE BY ISAACX =====]] */
+
+@keyframes fadeInAnimation {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+
+@keyframes liveAnimation {
+   0%   { 
+      opacity:1; 
+   }
+   50%  {
+      opacity:0; 
+   }
+   100% { 
+      opacity:1; 
+   }
+ }

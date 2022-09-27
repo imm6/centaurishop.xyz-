@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Centauri - Buy Robux</title>
+      <script src="https://kit.fontawesome.com/4d553b0ea4.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="css/register.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+      <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="shortcut icon" href="css/test2.ico" type="image/x-icon">
+      <script type="text/javascript" src="https://rawgit.com/VincentGarreau/particles.js/master/particles.js"></script>
+   </head>
+   <body>
+      <div id="bg">
+         <div class="Container">
+            <div class="Main" id="Main">
+              <form action="/auth/register" method="post">
+               <h1>Register</h1>
+               <h4>Username <b>*</b></h4>
+               <input type="text" required name ="user" id="user"placeholder="Username">
+               <h4>E-Mail <b>*</b></h4>
+               <input name="email" id="email" required placeholder="E-Mail">
+              <h4>Password <b>*</b></h4>
+               <input type="password" name="password" id="password" required placeholder="Password">
+               <a class="btn"><button id="register">Register</button></a>
+               </form>
+               <div id='olduser'>
+ <h4 >Have an account? <h4 style='color: #00c2de; cursor: pointer;'><a style="text-decoration: none; color: #00c2de;" href="/login">Login</a></h4> </h4>
+               </div>
+            </div>
+
+            <div class="NotificationContainer" id="NotificationContainer">
+              <div class="Notification">
+                <h2>Terms and Conditions</h2>
+                <p>Clicking in 'I agree' you accept the <a href="#" id="TAC">Terms and Conditions</a></p>
+                <a href="/login" id="TAC-Button">I agree</a>
+              </div>
+            </div>
+         </div>
+      </div>
+      <script type="text/javascript">
+        const open = document.getElementById('Buy');
+        const BuyContainer = document.getElementById('Main');
+        const NotificationContainer = document.getElementById('NotificationContainer');
+        open.addEventListener('click', () => {
+          NotificationContainer.classList.add('visible');
+          BuyContainer.classList.add('hide');
+        });  
+      </script>
+   </body>
+</html>

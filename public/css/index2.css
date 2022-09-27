@@ -1,0 +1,273 @@
+/* [[ ===== GOOGLE FONTS=====]] */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/* [[ ===== UNIVERSAL CONFIGURATIONS =====]] */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #060607; 
+  border-radius: 6px;
+}
+
+
+:root {
+  --maindark: #111113;
+  --maincolor: #16dbed;
+
+}
+
+body {
+  background-color: var(--maindark);
+  font-family: 'Raleway', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* [[ ===== HERO =====]] */
+
+.Hero {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.Left, .Right {
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  max-width: 50%;
+  flex-direction: column;
+}
+.Left  h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 1.2;
+  color: rgb(205, 223, 224);
+}
+
+.Left p {
+  padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.Hero-options {
+  display: flex;
+  gap: 11px;
+}
+.Left a{
+  font-family: 'Poppins';
+  text-decoration: none;
+  background-color: #16dbedde;
+  display: flex;
+  gap: 5px;
+  color: #eee;
+  transition: 0.2s;
+ align-items: center;
+  text-align: center;
+  padding: 8px 50px;
+  border-radius: 6px;
+}
+
+.Left A:hover {
+  opacity: 0.6;
+}
+/* [[ ===== FEATURES =====]] */
+
+.wave {
+  position: absolute;
+  width: 100%;
+}
+
+.Features {
+  max-width: 1800px;
+  padding-right: 12%;
+  padding-left: 12%;
+  padding-bottom: 15px;
+  margin-top: -25px;
+  background-color: #0c0c0d;
+}
+
+.Features h1 {
+   color: #16dbed;
+   font-family: 'Poppins';
+   font-weight: 700;
+
+}
+
+.Features p {
+  padding-top: 0.3rem;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.Feacture {
+  font-family: 'Poppins';
+  display: flex;
+  color: #eee;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.Icon {
+  background-color: rgb(22, 219, 237, 0.3);
+  color: #16dbed;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.Stock {
+  background-color: #0c0c0d;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: rgba(22, 205, 237, 0.8);
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+}
+
+#Stock-SubTitle {
+  color: rgba(235, 233, 241, 0.8);;
+}
+.wave img {
+  width: 100%;
+}
+ #Cheap {
+  color: #16dbed;
+  opacity: 0.8;
+ }
+#Automation  .Icon{
+  background-color: rgba(187, 22, 237, 0.2);
+  color: rgb(158, 22, 237);
+}
+
+#Automation {
+  color: rgb(158, 22, 237);
+  opacity: 0.8;
+}
+#support .Icon {
+  background-color: rgb(22, 237, 33, 0.2);
+  color: rgb(22, 237, 33);
+  
+}
+
+#support {
+  color: rgb(22, 237, 33);
+  opacity: 0.8;
+}
+#sing-in {
+  color: #eee;
+  background-color: rgba(245, 245, 245, 0.1);
+}
+
+#hero-text-colored {
+  color: var(--maincolor);
+}
+#vector {
+  max-width: 390px;
+}
+
+.Title {
+  color: #16dbed;
+   font-family: 'Poppins';
+   font-weight: 700;
+}
+
+
+/* [[ ===== SING UP =====]] */
+
+.SingUp {
+  background-color: #0c0c0d;
+  padding-top: 5rem;
+}
+.SingUpContainer {
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 5rem;
+}
+
+.SingUpContainer input {
+  background-color: #18181b;
+  border: none;
+  border-radius: 6px;
+  color: rgb(201, 198, 198);
+  padding-left: 10px;
+  width: 15%;
+  height: 35px;
+  font-family: 'Poppins';
+}
+
+.SingUpContainer button {
+  color: #eee;
+  font-family: 'Poppins';
+  border: none;
+  height: 35px;
+  width: 15%;
+  border-radius: 6px;
+  background-color: #16dbedad;
+
+}
+
+
+
+input:focus {
+  outline: none;
+}
+
+/* [[ ===== Responsive =====]] */
+
+@media (max-width: 600px) {
+  .Hero {
+    margin-bottom: 3rem;
+  }
+  .Right {
+    display: none;
+  }
+  .Left {
+    max-width: 100%;
+  }
+
+  .Hero-options a{
+      padding: 5px 20px;
+  }
+
+
+  .SingUpContainer input {
+    width: 30%;
+
+  }
+
+  #Feactures-title {
+    padding-top: 13px;
+  }
+
+}

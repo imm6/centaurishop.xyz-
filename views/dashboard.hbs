@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Centauri - Robux Shop</title>
+      <link rel="shortcut icon" href="css/test2.ico" type="image/x-icon">
+
+      <!-- [[ ===== FONTS =====]]  -->
+
+      <style>
+        /* [[ ===== Loader =====]] */
+
+.Main {
+   display: none;
+   animation: fadeInAnimation ease 0.5s;
+}
+.Loader {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.Loader img {
+   animation: zoom-in-zoom-out 2s ease infinite;
+   max-width: 200px;
+}
+
+      </style>
+
+       <!-- [[ ===== Librarys =====]]  -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/4d553b0ea4.js" crossorigin="anonymous"></script>
+      <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+       <!-- [[ ===== CSS and JS=====]]  -->
+
+      <link rel="stylesheet" href="css/dashboard.css" />
+      <script src="css/Loader.js"></script>
+    
+   </head>
+   <body>
+      <div class="Loader">
+         <img src="https://media.discordapp.net/attachments/926345689741557771/1005214723601604738/01e4278bcc2e2b0c699f8bd9d1bd6c2e.png" alt="Logo" width='130'>
+      </div>
+
+      <div class="Main">
+         <header>
+            <img id="iconbutton" src="css/transparentplanet.png" alt="">
+            <nav>
+               <ul class="Navbar-ul">
+                  <li class="Navbar-li">
+                     <a href="#Introduction" id="Actual">Home</a>
+                  </li>
+                  <li  class="Navbar-li">
+                     <a href="#Services">Offers</a>
+                  </li>
+                  <li  class="Navbar-li">
+                     <a href="https://discord.gg/bKdtTNxjtv">Discord</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="Options">
+               <li id="Lenguage">
+                  <a  class="Select">  <img src="https://themesbrand.com/skote/layouts/assets/images/flags/us.jpg" alt=""> <i class="fa-solid fa-caret-down"></i></a>
+                  <div class="submenu">
+                     <ul>
+                        <div class="Flex">
+                           <img src="https://themesbrand.com/skote/layouts/assets/images/flags/us.jpg" alt="">
+                           <li><a href="">English</a></li>
+                        </div>
+                        <div class="Flex">
+                           <img src="https://themesbrand.com/skote/layouts/assets/images/flags/spain.jpg" alt="">
+                           <li><a href="">Spanish</a></li>
+                        </div>
+                     </ul>
+                  </div>
+               </li>
+               <a href="Button" id="Loginbtn">Login</a>
+            </div>
+
+            <div class="Loged">
+               <img src="{{image}}" alt="">
+                <p style="color: #c6cdce; margin-right: 5px;">{{username}}</p>
+            </div>
+         </header>
+         <div class="Introduction">
+            <h1 id="'MainTitle">Centauri</h1>
+            <h4 id="MainText">Centauri is a Shop for <b>Robux</b>, the virtual currency of the Roblox game. We offer fast, low
+               cost, and
+               reliable service with great customer service.
+            </h4>
+         </div>
+         <hr size="1" color="#282828" noshade="">
+         <div class="Title" style="margin-top: 5rem;">
+            <h3>Our Services</h3>
+         </div>
+         <div class="Services">
+            <form  method="post" action="/buy">
+            <div class="Card">
+               <h4 class="Price">$3.50</h4>
+               <h2 id="amount" name="amount">1.000 Robux </h2>
+               <p>Buy 1.000 Robux for 3.50 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            <div class="Card" id="MostSell">
+               <h4 class="Price">$5</h4>
+               <h2 id="amount" name="amount">1.429 Robux </h2>
+               <p>Buy 1.429 Robux for 5 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            <div class="Card">
+               <h4 class="Price">$7</h4>
+               <h2 id="amount" name="amount">2.000 Robux </h2>
+               <p>Buy 2.000 Robux for 7 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            <div class="Card">
+               <h4 class="Price">$10</h4>
+               <h2 name="amount" id="amount">2.858 Robux </h2>
+               <p>Buy 2.858 Robux for 10 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            <div class="Card">
+               <h4 class="Price">$17</h4>
+               <h2 id="amount" name="amount">5.000 Robux </h2>
+               <p>Buy 5.000 Robux for 17 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            <div class="Card">
+               <h4 class="Price">25$</h4>
+               <h2 name="amount">7.145 Robux </h2>
+               <p>Buy 7.145 Robux for 25 Dollars </p>
+               <button type="sumbit" class="button">Buy <i class='bx bxs-cart'></i> </button>
+            </div>
+            </form>
+         </div>
+         <hr size="1" color="#282828" noshade="">
+         <div class="Title" style="margin-top: 5rem;">
+            <h3>Our Stock</h3>
+         </div>
+         <div class="StockContainer">
+            <div class="Stock">
+               <i class="fa-solid fa-box-dollar"></i>
+            <h3>{{stock}} Robux</h3>
+            <h4>Actual Stock</h4>
+            <a href="" id="withdrawbutton" class="button">Withdraw</a>
+            </div>
+
+            <div class="Bottom">
+               <button id="Live"> <i class='bx bx-rss'></i> Live </button>
+            </div>
+         </div>
+         <hr size="1" color="#282828" noshade="">
+         <footer>
+            <div class="Content">
+               <p>Copyright 2022 Centauri </p>
+            </div>
+         </footer>
+      </div>
+
+      <script type="text/javascript">
+
+
+        window.onload = () => {
+        setTimeout(() => {
+        $('.Loader').fadeOut(1e3);
+        setTimeout(() => {
+           $('.Loader').css('display', 'none');
+           $('.Main').css('display', 'block')
+        
+           ScrollReveal().reveal('.Main');
+            ScrollReveal().reveal('.Services', { delay: 100 });
+            ScrollReveal().reveal('.Stock', { delay: 200 });
+        }, 1e3);
+        }, 1e3);
+        }
+     </script>
+   </body>
+</html>
